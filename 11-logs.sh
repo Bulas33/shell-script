@@ -10,6 +10,8 @@ R="\e[31m"
 G="\e[32m"
 N="\e[0m"
 
+echo "script started and excuited at  $TIMESTAMP" &>> $LOGFILE
+
 VALIDATE(){
       if [ $1 -ne 0 ]
      then
@@ -36,7 +38,7 @@ else
     yum install mysqlll  -y &>> $LOGFILE
 
 
-    VALIDATE $? "INstalling MYSQL"
+    VALIDATE $? "Installing MYSQL"
 
     yum install git -y  &>> $LOGFILE
 
