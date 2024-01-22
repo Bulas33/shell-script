@@ -10,7 +10,6 @@ R="\e[31m"
 G="\e[32m"
 N="\e[0m"
 
-echo "script started and excuited at  $TIMESTAMP" &>> $LOGFILE
 
 VALIDATE(){
       if [ $1 -ne 0 ]
