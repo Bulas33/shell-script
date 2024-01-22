@@ -33,7 +33,7 @@ else
 
    fi
 
-    yum install mysql  -y &>> $LOGFILE
+    yum install mysqlll  -y &>> $LOGFILE
 
 
     VALIDATE $? "INstalling MYSQL"
